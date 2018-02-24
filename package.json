@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/zilong-thu/react-ssr-intro/issues"
   },
-  "homepage": "https://github.com/zilong-thu/react-ssr-intro#readme"
+  "homepage": "https://github.com/zilong-thu/react-ssr-intro#readme",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
 }
