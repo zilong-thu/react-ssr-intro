@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "hello": "babel-node ./client/pages/hello/index.jsx"
+    "hello": "babel ./client/pages/hello/index.js",
+    "server": "babel-node ./server/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/zilong-thu/react-ssr-intro#readme",
   "dependencies": {
+    "koa": "^2.5.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
