@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "hello": "babel ./client/pages/hello/index.js",
-    "server": "babel-node ./server/index.js",
+    "serve": "babel-node ./server/index.js",
     "build": "gulp build"
   },
   "repository": {
@@ -22,6 +21,7 @@
   "dependencies": {
     "gulp": "^3.9.1",
     "koa": "^2.5.0",
+    "moment": "^2.20.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },

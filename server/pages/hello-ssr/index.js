@@ -1,5 +1,6 @@
-// CommonJS modules
 import React from 'react';
+import Part  from './part.js';
+
 
 export default class HelloWorldPage extends React.Component {
   constructor() {
@@ -17,9 +18,10 @@ export default class HelloWorldPage extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={{padding: '5px'}}>
         <h2>Hello World!</h2>
-        <div>{Math.random()}</div>
+        <p>本页面使用 React 服务端渲染而成。</p>
+        <Part />
       </div>
     );
   }
