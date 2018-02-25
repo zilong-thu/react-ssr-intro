@@ -1,16 +1,8 @@
-const path   = require('path');
-const Koa    = require('koa');
-const app    = new Koa();
+const Koa            = require('koa');
+const React          = require('react');
 const ReactDOMServer = require('react-dom/server');
-const React  = require('react');
 
-// x-response-time
-app.use(async (ctx, next) => {
-  const start = Date.now();
-  await next();
-  const ms = Date.now() - start;
-  ctx.set('X-Response-Time', `${ms}ms`);
-});
+const app    = new Koa();
 
 // logger
 app.use(async (ctx, next) => {
@@ -22,9 +14,7 @@ app.use(async (ctx, next) => {
 
 app.use(async (ctx, next) => {
   const PageFunc = require('./pages/hello-ssr/index.js').default;
-
-  const str = ReactDOMServer.renderToString(<PageFunc />);
-  ctx.body = str;
+  ctx.body = ReactDOMServer.renderToString(<PageFunc />);
 });
 
 const port = 7002;
