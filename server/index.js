@@ -24,7 +24,6 @@ app.use(async (ctx, next) => {
   const PageFunc = require('./pages/hello-ssr/index.js').default;
 
   const str = ReactDOMServer.renderToString(<PageFunc />);
-  console.log(str);
   ctx.body = str;
 });
 
