@@ -31,6 +31,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "glob": "^7.1.2",
-    "mkdirp": "^0.5.1"
+    "mkdirp": "^0.5.1",
+    "webpack": "^4.0.0"
   }
 }
