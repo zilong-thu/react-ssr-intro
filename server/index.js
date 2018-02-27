@@ -14,7 +14,7 @@ app.use(async (ctx, next) => {
   console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
 });
 
-router.get('/', (ctx, next) => {
+router.get('/hello-ssr', (ctx, next) => {
   const PageFunc = require('./pages/hello-ssr/index.js').default;
   ctx.body = ReactDOMServer.renderToString(<PageFunc />);
 });
